@@ -1,0 +1,77 @@
+body
+    background #06032a
+    font-family Arial
+    // overflow hidden
+    
+    form
+        margin-top 50vh
+        margin-left 50vw
+        width 50vw
+        text-align center
+        transform translate(-50%,-50%)
+        
+ 
+        label
+            color #4d4dfe
+            font-size 40px
+          
+        input[type=text]
+            background #4d4dfe
+            width 25vw
+            height 60px
+            border-radius 50px
+            margin 20px auto
+            display block
+            padding 20px
+            
+        ::-webkit-input-placeholder
+            color rgba(6, 3, 42,0.5) !important
+        
+        input[type=submit]
+            color #4d4dfe
+            font-size 20px
+            position relative
+            display block
+            margin auto
+            
+            
+            
+        input[type=submit]:after
+            position absolute
+          
+
+
+
+    .audio
+        width 100vw
+        height 100vh
+        
+        .text
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%,-50%)
+            font-size 11vw
+            color #06032a
+            user-select none
+
+        .line
+            width 1vw
+            height 80vh
+            position absolute
+            top 50%
+            transform translate(-50%,-50%)
+            border-radius 2vw / 6vw
+
+        for i in (1..99)
+            .line:nth-child( { i } )
+                left (0 + i) vw
+
+        for i in (1..50)
+            .line:nth-child( { i } )
+                background  hsl(240, (50 + i)%, 65%)
+
+        for i in (51..99)
+            .line:nth-child( { i } )
+                left (i) vw
+                background  hsl(240, (100 - (i - 50 ))%, 65%)

@@ -1,26 +1,10 @@
-# Voice visualisation 
+# Voice visualisation
 
-This project alloaw you to have a voice visualisation thanks to the microphone.
+This project allow you to have a voice visualisation thanks to the microphone.
 
-## Getting Started
+![](app/screen/audio-visualisation-1280.jpg)
 
-To change thingsin this project you will need gulp.
+## Install
 
-Open your console :
-
-To intall the dependences : 
-```
-npm intall
-
-```
-
-Then : 
-```
-gulp 
-
-```
-Or  if you want to have a link to test on several devices: 
-```
-gulp share 
-
-```
+Install :
+`npm intall`
